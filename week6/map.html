@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_74eec4e10418eecd99681174d95ae23e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_74eec4e10418eecd99681174d95ae23e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_74eec4e10418eecd99681174d95ae23e = L.map(
+                "map_74eec4e10418eecd99681174d95ae23e",
+                {
+                    center: [34.392827654, 132.46226698],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_21fa0d08f02dc4720c9bb2f87eeeecea = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_21fa0d08f02dc4720c9bb2f87eeeecea.addTo(map_74eec4e10418eecd99681174d95ae23e);
+        
+    
+            var marker_72bd95ae6a41ce45e2dc6659e8349c4d = L.marker(
+                [34.39284603, 132.4522656],
+                {}
+            ).addTo(map_74eec4e10418eecd99681174d95ae23e);
+        
+    
+            var icon_8ee432a392be2d7f8761f8b99d801c7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_72bd95ae6a41ce45e2dc6659e8349c4d.setIcon(icon_8ee432a392be2d7f8761f8b99d801c7d);
+        
+    
+        var popup_68e9f6c6e4aacc10c20cbb6b6ca2d3e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d0cbe36a0a8be5a971f6e6aa0508743 = $(`<div id="html_7d0cbe36a0a8be5a971f6e6aa0508743" style="width: 100.0%; height: 100.0%;"><div style="width:350px">行ってみたい観光スポット</div></div>`)[0];
+                popup_68e9f6c6e4aacc10c20cbb6b6ca2d3e9.setContent(html_7d0cbe36a0a8be5a971f6e6aa0508743);
+            
+        
+
+        marker_72bd95ae6a41ce45e2dc6659e8349c4d.bindPopup(popup_68e9f6c6e4aacc10c20cbb6b6ca2d3e9)
+        ;
+
+        
+    
+    
+            marker_72bd95ae6a41ce45e2dc6659e8349c4d.bindTooltip(
+                `<div>
+                     宮島
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_208ffdc78ecbf6d2cdb97def6fa5ca0b = L.marker(
+                [34.38911573, 132.4562155],
+                {}
+            ).addTo(map_74eec4e10418eecd99681174d95ae23e);
+        
+    
+            var icon_f337dc37d8c4695905a3944e1c616ab9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_208ffdc78ecbf6d2cdb97def6fa5ca0b.setIcon(icon_f337dc37d8c4695905a3944e1c616ab9);
+        
+    
+        var popup_99b56a13b0c0d49137506e33d30acfed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bc55aa64baa718fed1181f7bb1bac18 = $(`<div id="html_8bc55aa64baa718fed1181f7bb1bac18" style="width: 100.0%; height: 100.0%;"><div style="width:350px">Sakiが前泊するホテル</div></div>`)[0];
+                popup_99b56a13b0c0d49137506e33d30acfed.setContent(html_8bc55aa64baa718fed1181f7bb1bac18);
+            
+        
+
+        marker_208ffdc78ecbf6d2cdb97def6fa5ca0b.bindPopup(popup_99b56a13b0c0d49137506e33d30acfed)
+        ;
+
+        
+    
+    
+            marker_208ffdc78ecbf6d2cdb97def6fa5ca0b.bindTooltip(
+                `<div>
+                     ホテルエスプル広島平和公園
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ddff9cca6e8dfafec1d7c9f7d83fe2df = L.marker(
+                [34.38626261, 132.4735821],
+                {}
+            ).addTo(map_74eec4e10418eecd99681174d95ae23e);
+        
+    
+            var icon_2fed091d13aa05e22b58e77ea7da1ee3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ddff9cca6e8dfafec1d7c9f7d83fe2df.setIcon(icon_2fed091d13aa05e22b58e77ea7da1ee3);
+        
+    
+        var popup_02c393767708824e88aa5d6041c154cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17db3c6ac8d6c93c05710acf4c3b7f1c = $(`<div id="html_17db3c6ac8d6c93c05710acf4c3b7f1c" style="width: 100.0%; height: 100.0%;"><div style="width:350px">Saki,Misuzu,Riria,Karenが金曜日に行く場所</div></div>`)[0];
+                popup_02c393767708824e88aa5d6041c154cf.setContent(html_17db3c6ac8d6c93c05710acf4c3b7f1c);
+            
+        
+
+        marker_ddff9cca6e8dfafec1d7c9f7d83fe2df.bindPopup(popup_02c393767708824e88aa5d6041c154cf)
+        ;
+
+        
+    
+    
+            marker_ddff9cca6e8dfafec1d7c9f7d83fe2df.bindTooltip(
+                `<div>
+                     広島現代美術館
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7074855957726b05db416bca6a1f5ab = L.marker(
+                [34.400276, 132.475669],
+                {}
+            ).addTo(map_74eec4e10418eecd99681174d95ae23e);
+        
+    
+            var icon_a074e86d8b3e4911208c5d03c0e58f8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d7074855957726b05db416bca6a1f5ab.setIcon(icon_a074e86d8b3e4911208c5d03c0e58f8b);
+        
+    
+        var popup_ea6f2bc689c0c3cb3a7bb239907ed494 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfcc440a730db0f9b63d3ecdd590f276 = $(`<div id="html_dfcc440a730db0f9b63d3ecdd590f276" style="width: 100.0%; height: 100.0%;"><div style="width:350px">前泊メンバーでインタビュー</div></div>`)[0];
+                popup_ea6f2bc689c0c3cb3a7bb239907ed494.setContent(html_dfcc440a730db0f9b63d3ecdd590f276);
+            
+        
+
+        marker_d7074855957726b05db416bca6a1f5ab.bindPopup(popup_ea6f2bc689c0c3cb3a7bb239907ed494)
+        ;
+
+        
+    
+    
+            marker_d7074855957726b05db416bca6a1f5ab.bindTooltip(
+                `<div>
+                     広島テレビ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80903ef9eb56ae006136e8942fcbc25a = L.marker(
+                [34.3956379, 132.4536027],
+                {}
+            ).addTo(map_74eec4e10418eecd99681174d95ae23e);
+        
+    
+            var icon_b861e28b889f0f3c37e7909ec9f54f68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_80903ef9eb56ae006136e8942fcbc25a.setIcon(icon_b861e28b889f0f3c37e7909ec9f54f68);
+        
+    
+        var popup_0265f604562e22126a1ccee03fc1b10c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_871bd0ad2e9c5ccea7bc10531d6b2e93 = $(`<div id="html_871bd0ad2e9c5ccea7bc10531d6b2e93" style="width: 100.0%; height: 100.0%;"><div style="width:350px">資料館拝観、Dialogue</div></div>`)[0];
+                popup_0265f604562e22126a1ccee03fc1b10c.setContent(html_871bd0ad2e9c5ccea7bc10531d6b2e93);
+            
+        
+
+        marker_80903ef9eb56ae006136e8942fcbc25a.bindPopup(popup_0265f604562e22126a1ccee03fc1b10c)
+        ;
+
+        
+    
+    
+            marker_80903ef9eb56ae006136e8942fcbc25a.bindTooltip(
+                `<div>
+                     原爆ドーム
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            tile_layer_21fa0d08f02dc4720c9bb2f87eeeecea.addTo(map_74eec4e10418eecd99681174d95ae23e);
+        
+</script>
+</html>
