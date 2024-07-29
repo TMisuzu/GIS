@@ -1,0 +1,2229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e39727a8e8f90051a947f766b0500e2f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e39727a8e8f90051a947f766b0500e2f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e39727a8e8f90051a947f766b0500e2f = L.map(
+                "map_e39727a8e8f90051a947f766b0500e2f",
+                {
+                    center: [34.391911542071576, 132.45810970604487],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2fc90120359af51da4858055b6ab55a8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_2fc90120359af51da4858055b6ab55a8.addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            var marker_ce52114b7b51c81d562c43be7d16bd55 = L.marker(
+                [34.3914796517827, 132.453044425058],
+                {}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            marker_ce52114b7b51c81d562c43be7d16bd55.bindTooltip(
+                `<div>
+                     広島平和記念資料館
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2dc7a689be7ce4153f580c234f4e73cb = L.circle(
+                [34.3914796517827, 132.453044425058],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            var marker_871fcac3add961f56aa94959aaa18b24 = L.marker(
+                [34.393284646367, 132.453482405087],
+                {}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            marker_871fcac3add961f56aa94959aaa18b24.bindTooltip(
+                `<div>
+                     国立広島原爆死没者追悼平和祈念館
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f7466f21b83dde152f431207c4a5a08b = L.circle(
+                [34.393284646367, 132.453482405087],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            var marker_3e795699b45b3857996864c779028639 = L.marker(
+                [34.3938766489637, 132.453249397099],
+                {}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            marker_3e795699b45b3857996864c779028639.bindTooltip(
+                `<div>
+                     平和記念公園レストハウス
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_949b70c8be875d32f18b006367f201b0 = L.circle(
+                [34.3938766489637, 132.453249397099],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            var marker_68d45cce6c6ad245b10213594b7155dc = L.marker(
+                [34.3914666385696, 132.456785415034],
+                {}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            marker_68d45cce6c6ad245b10213594b7155dc.bindTooltip(
+                `<div>
+                     旧日本銀行広島支店
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b459cc6b405f0d8e55c9497f3e01e413 = L.circle(
+                [34.3914666385696, 132.456785415034],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            var marker_ec016a3acf200553308882bb0ffaf211 = L.marker(
+                [34.396223656452, 132.450876386111],
+                {}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            marker_ec016a3acf200553308882bb0ffaf211.bindTooltip(
+                `<div>
+                     本川小学校平和資料館
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4653f3253fc765135a481954ae20ac6f = L.circle(
+                [34.396223656452, 132.450876386111],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            var marker_389c0eaf85b029e98a8af56af1528c24 = L.marker(
+                [34.3915456252636, 132.458224392027],
+                {}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            marker_389c0eaf85b029e98a8af56af1528c24.bindTooltip(
+                `<div>
+                     袋町小学校平和資料館
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_efb9dd004956617c9d0080800832e97f = L.circle(
+                [34.3915456252636, 132.458224392027],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            var marker_957c1bd86068be29b40edb5cd5455cbd = L.marker(
+                [34.3853636563191, 132.454776562968],
+                {}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            marker_957c1bd86068be29b40edb5cd5455cbd.bindTooltip(
+                `<div>
+                     広島市役所旧庁舎資料展示室
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_34f5a0ae024ac637f838d10f07f4bd17 = L.circle(
+                [34.3853636563191, 132.454776562968],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            var marker_0ec7bf3653619b8cb553dcb18949d499 = L.marker(
+                [34.4034434940423, 132.465176165943],
+                {}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            marker_0ec7bf3653619b8cb553dcb18949d499.bindTooltip(
+                `<div>
+                     広島逓信病院
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_10beb302c6f19855ef6095823f05403e = L.circle(
+                [34.4034434940423, 132.465176165943],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            var marker_3dfb32ff999081157cacca4b938dd93f = L.marker(
+                [34.3805198608842, 132.477372205077],
+                {}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            marker_3dfb32ff999081157cacca4b938dd93f.bindTooltip(
+                `<div>
+                     広島大学医学部医学資料館
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6a53a0b87b7dfea41b489dd9c6f34333 = L.circle(
+                [34.3805198608842, 132.477372205077],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            var circle_marker_ce2668585439de57a44680b751f789c3 = L.circleMarker(
+                [34.4044337637814, 132.461490326956],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_ce2668585439de57a44680b751f789c3.bindTooltip(
+                `<div>
+                     白島小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_add74f14a3629624bca79058abd035b3 = L.circleMarker(
+                [34.4030362581313, 132.456618796004],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_add74f14a3629624bca79058abd035b3.bindTooltip(
+                `<div>
+                     基町小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a89f72972adeab20aedce91a91c8d486 = L.circleMarker(
+                [34.3965277971639, 132.466524973064],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_a89f72972adeab20aedce91a91c8d486.bindTooltip(
+                `<div>
+                     幟町小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_26a5be978f99fd1947d5c43db65745fa = L.circleMarker(
+                [34.3918612711572, 132.458782831031],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_26a5be978f99fd1947d5c43db65745fa.bindTooltip(
+                `<div>
+                     袋町小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dd4372580b5b3b2d38ba22dd2353e9aa = L.circleMarker(
+                [34.3853397648501, 132.467145035953],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_dd4372580b5b3b2d38ba22dd2353e9aa.bindTooltip(
+                `<div>
+                     竹屋小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4367801b7867bf6a08ec763a63ef5496 = L.circleMarker(
+                [34.3798139617061, 132.459463629068],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_4367801b7867bf6a08ec763a63ef5496.bindTooltip(
+                `<div>
+                     千田小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_600d6418655da40ebf1c802957954b1e = L.circleMarker(
+                [34.3868095454095, 132.448123049026],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_600d6418655da40ebf1c802957954b1e.bindTooltip(
+                `<div>
+                     中島小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0599aa0b695ac81b03cada4c3760d6bb = L.circleMarker(
+                [34.368391456559, 132.452770911039],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_0599aa0b695ac81b03cada4c3760d6bb.bindTooltip(
+                `<div>
+                     吉島東小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e1c318b6cb21833e794dfe73ebf5e683 = L.circleMarker(
+                [34.3721756275231, 132.444509722032],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_e1c318b6cb21833e794dfe73ebf5e683.bindTooltip(
+                `<div>
+                     吉島小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_26ee887e36aa3f12ccdbf7fe5afe6bb8 = L.circleMarker(
+                [34.4009931064715, 132.446306146043],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_26ee887e36aa3f12ccdbf7fe5afe6bb8.bindTooltip(
+                `<div>
+                     広瀬小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7faa7600584b1b20688e819609f458a2 = L.circleMarker(
+                [34.3959112638576, 132.450530230117],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_7faa7600584b1b20688e819609f458a2.bindTooltip(
+                `<div>
+                     本川小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bef805df665c1883a1170bb4a8f53782 = L.circleMarker(
+                [34.3873465516029, 132.445467044034],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_bef805df665c1883a1170bb4a8f53782.bindTooltip(
+                `<div>
+                     神崎小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bc1df94482bb6b8229eb1a099d860cf8 = L.circleMarker(
+                [34.3797040066163, 132.437884425959],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_bc1df94482bb6b8229eb1a099d860cf8.bindTooltip(
+                `<div>
+                     舟入小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_546d4948a8c07b548409ef1095ee1820 = L.circleMarker(
+                [34.3645471204811, 132.43289643795],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_546d4948a8c07b548409ef1095ee1820.bindTooltip(
+                `<div>
+                     江波小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c178e12efe0706ac24bcfff75104fd64 = L.circleMarker(
+                [34.4459225920488, 132.53568685405],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_c178e12efe0706ac24bcfff75104fd64.bindTooltip(
+                `<div>
+                     福木小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b9222826542114774a50901a015bb77b = L.circleMarker(
+                [34.4279283108738, 132.517031532076],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_b9222826542114774a50901a015bb77b.bindTooltip(
+                `<div>
+                     上温品小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f213d0ed6ea3af74e8fb9f4c9eb3cae1 = L.circleMarker(
+                [34.4160772547219, 132.510522119022],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_f213d0ed6ea3af74e8fb9f4c9eb3cae1.bindTooltip(
+                `<div>
+                     温品小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5aba999ce7d4e2b511e9b3febe3de313 = L.circleMarker(
+                [34.435189356077, 132.485650304013],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_5aba999ce7d4e2b511e9b3febe3de313.bindTooltip(
+                `<div>
+                     戸坂小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b08b1794d49b45e3588b3546d1b13c8c = L.circleMarker(
+                [34.4298026178496, 132.488829588014],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_b08b1794d49b45e3588b3546d1b13c8c.bindTooltip(
+                `<div>
+                     戸坂城山小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_99c8f2f8cf53bacd62e598c324f9a691 = L.circleMarker(
+                [34.4211069179131, 132.500281937071],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_99c8f2f8cf53bacd62e598c324f9a691.bindTooltip(
+                `<div>
+                     東浄小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c7ce0adc197f450e5affbe810b6ab366 = L.circleMarker(
+                [34.4096584918806, 132.500244467996],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_c7ce0adc197f450e5affbe810b6ab366.bindTooltip(
+                `<div>
+                     中山小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_64079c470ae80f8d4a988e21bd8dd3b2 = L.circleMarker(
+                [34.4192934387295, 132.470322409061],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_64079c470ae80f8d4a988e21bd8dd3b2.bindTooltip(
+                `<div>
+                     牛田新町小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9ed3a1f8db386cf6efc282aec9a01b8f = L.circleMarker(
+                [34.4189475158091, 132.480641668058],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_9ed3a1f8db386cf6efc282aec9a01b8f.bindTooltip(
+                `<div>
+                     早稲田小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_de6e06d5608cb1631bce213f2cfe9ed6 = L.circleMarker(
+                [34.4128998110274, 132.470809862938],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_de6e06d5608cb1631bce213f2cfe9ed6.bindTooltip(
+                `<div>
+                     牛田小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4d9f11c42564b80dda29b53ae34a2010 = L.circleMarker(
+                [34.3998654402891, 132.485417549914],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_4d9f11c42564b80dda29b53ae34a2010.bindTooltip(
+                `<div>
+                     尾長小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_339696d873f7b748b120066b811f584d = L.circleMarker(
+                [34.3989727136735, 132.496175197981],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_339696d873f7b748b120066b811f584d.bindTooltip(
+                `<div>
+                     矢賀小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fa4b044ae2448eb108955dbc6f065b22 = L.circleMarker(
+                [34.3927610602658, 132.47970115201],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_fa4b044ae2448eb108955dbc6f065b22.bindTooltip(
+                `<div>
+                     荒神町小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_44eed00eb832ba16c42c86a0b60b6261 = L.circleMarker(
+                [34.3848889448722, 132.497027575105],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_44eed00eb832ba16c42c86a0b60b6261.bindTooltip(
+                `<div>
+                     大州小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c0580ffa9a7872fa75283acca2f19cf2 = L.circleMarker(
+                [34.3725813959984, 132.506447860051],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_c0580ffa9a7872fa75283acca2f19cf2.bindTooltip(
+                `<div>
+                     青崎小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_72cdac4c9d0db2f84efbfcf311a88099 = L.circleMarker(
+                [34.3916510521475, 132.47358411103],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_72cdac4c9d0db2f84efbfcf311a88099.bindTooltip(
+                `<div>
+                     段原小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a6cf86f05bde3a672985ea1d35c5bd79 = L.circleMarker(
+                [34.3848301527541, 132.485088470016],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_a6cf86f05bde3a672985ea1d35c5bd79.bindTooltip(
+                `<div>
+                     比治山小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d19a818778f2bc7504ba7bcab00b7ccc = L.circleMarker(
+                [34.3786684058782, 132.468148960106],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_d19a818778f2bc7504ba7bcab00b7ccc.bindTooltip(
+                `<div>
+                     皆実小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9e18cf9326fbde7c5521aa3b3d74325e = L.circleMarker(
+                [34.3683245682561, 132.474214432916],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_9e18cf9326fbde7c5521aa3b3d74325e.bindTooltip(
+                `<div>
+                     翠町小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dd384f46bbc91b0144706483fc608540 = L.circleMarker(
+                [34.3750350739844, 132.478426074065],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_dd384f46bbc91b0144706483fc608540.bindTooltip(
+                `<div>
+                     大河小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_87a6cbdd436f25b5b3afa30e23010e21 = L.circleMarker(
+                [34.3717640082599, 132.48211621805],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_87a6cbdd436f25b5b3afa30e23010e21.bindTooltip(
+                `<div>
+                     黄金山小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b11b3de977c3646a3b90edef7f87065c = L.circleMarker(
+                [34.3754183464057, 132.494648609076],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_b11b3de977c3646a3b90edef7f87065c.bindTooltip(
+                `<div>
+                     仁保小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_081751f50edfdafaf213ec7821d8b389 = L.circleMarker(
+                [34.3627774088653, 132.48608760195],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_081751f50edfdafaf213ec7821d8b389.bindTooltip(
+                `<div>
+                     楠那小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_502b120e9de3dd206be9fe2b3a44258d = L.circleMarker(
+                [34.3578958895493, 132.468249707994],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_502b120e9de3dd206be9fe2b3a44258d.bindTooltip(
+                `<div>
+                     宇品東小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7e363a95325f90431e2ee4f7c947e8ad = L.circleMarker(
+                [34.3608294820366, 132.461175460912],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_7e363a95325f90431e2ee4f7c947e8ad.bindTooltip(
+                `<div>
+                     宇品小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ff52bfa1482eeb8a3afedb88fd9e6704 = L.circleMarker(
+                [34.3482450929911, 132.460308112028],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_ff52bfa1482eeb8a3afedb88fd9e6704.bindTooltip(
+                `<div>
+                     元宇品小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4442edd90ad43d6034f7e930f7ee3d91 = L.circleMarker(
+                [34.3049235908849, 132.437649189046],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_4442edd90ad43d6034f7e930f7ee3d91.bindTooltip(
+                `<div>
+                     似島小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6b9438651debf6eb3180124cb495a07b = L.circleMarker(
+                [34.3152264424519, 132.447008437137],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_6b9438651debf6eb3180124cb495a07b.bindTooltip(
+                `<div>
+                     似島学園小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a3eaeb36f41f2fb52f411f1e99dafb75 = L.circleMarker(
+                [34.3667140231976, 132.509288693971],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_a3eaeb36f41f2fb52f411f1e99dafb75.bindTooltip(
+                `<div>
+                     向洋新町小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5aec5ff79808649a5da2709023a8e3a6 = L.circleMarker(
+                [34.4171645246856, 132.457059709035],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_5aec5ff79808649a5da2709023a8e3a6.bindTooltip(
+                `<div>
+                     大芝小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_300481e8a3e3a81e170b85d978397723 = L.circleMarker(
+                [34.4124383585166, 132.450669457004],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_300481e8a3e3a81e170b85d978397723.bindTooltip(
+                `<div>
+                     三篠小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_68fa0a77cf7a3fe0d4f3707933d44f80 = L.circleMarker(
+                [34.3974940446879, 132.441379417006],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_68fa0a77cf7a3fe0d4f3707933d44f80.bindTooltip(
+                `<div>
+                     天満小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6dc1cc675c226bd5a69cddb179261b7b = L.circleMarker(
+                [34.3900826130046, 132.434831901975],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_6dc1cc675c226bd5a69cddb179261b7b.bindTooltip(
+                `<div>
+                     観音小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_de9709f1c51bab3848489572f865aca8 = L.circleMarker(
+                [34.3823727959474, 132.426713430937],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_de9709f1c51bab3848489572f865aca8.bindTooltip(
+                `<div>
+                     南観音小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5500dfefa8acdb940cdaba0a4f06c977 = L.circleMarker(
+                [34.4002332155442, 132.422131789022],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_5500dfefa8acdb940cdaba0a4f06c977.bindTooltip(
+                `<div>
+                     己斐小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dbbe0e891ac265e7d4ffa04041fbb7d3 = L.circleMarker(
+                [34.4066106280101, 132.425259536023],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_dbbe0e891ac265e7d4ffa04041fbb7d3.bindTooltip(
+                `<div>
+                     己斐東小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_19bb384c1f44179a86bfdb48192fb86d = L.circleMarker(
+                [34.3980963294942, 132.386947108992],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_19bb384c1f44179a86bfdb48192fb86d.bindTooltip(
+                `<div>
+                     山田小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_add31a990340f906a07059e923c9fbce = L.circleMarker(
+                [34.3870138939207, 132.407503612998],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_add31a990340f906a07059e923c9fbce.bindTooltip(
+                `<div>
+                     古田小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_08dd730a0e4bc8a1ad34c5c645fe85b4 = L.circleMarker(
+                [34.3835476275905, 132.416833496967],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_08dd730a0e4bc8a1ad34c5c645fe85b4.bindTooltip(
+                `<div>
+                     庚午小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_af8ff35eac280ef730406c572c4c63b4 = L.circleMarker(
+                [34.3817051755129, 132.405427229029],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_af8ff35eac280ef730406c572c4c63b4.bindTooltip(
+                `<div>
+                     草津小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5f1b4a927f6bf890edcaad37c4ec55b6 = L.circleMarker(
+                [34.3796967188348, 132.393320027029],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_5f1b4a927f6bf890edcaad37c4ec55b6.bindTooltip(
+                `<div>
+                     鈴が峰小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_afe5d0f11e700424ef1610780597ab01 = L.circleMarker(
+                [34.3720899559503, 132.384366021047],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_afe5d0f11e700424ef1610780597ab01.bindTooltip(
+                `<div>
+                     井口小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c2055a612e980e4a7b62ae9e2eed5ed3 = L.circleMarker(
+                [34.3726195159917, 132.390471190045],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_c2055a612e980e4a7b62ae9e2eed5ed3.bindTooltip(
+                `<div>
+                     井口明神小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a3441fac871925498095170ba8db6418 = L.circleMarker(
+                [34.4170055676498, 132.425347950092],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_a3441fac871925498095170ba8db6418.bindTooltip(
+                `<div>
+                     己斐上小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f1c8c2de6081dda360ba514c547a5951 = L.circleMarker(
+                [34.3801619570231, 132.381750867124],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_f1c8c2de6081dda360ba514c547a5951.bindTooltip(
+                `<div>
+                     井口台小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fe96c7b9c8d6e04f3094a52d69fea494 = L.circleMarker(
+                [34.3964758974898, 132.414690080016],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_fe96c7b9c8d6e04f3094a52d69fea494.bindTooltip(
+                `<div>
+                     高須小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d870b9901bd456ebdd7e80e5655e59f6 = L.circleMarker(
+                [34.3920631916997, 132.403365324056],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_d870b9901bd456ebdd7e80e5655e59f6.bindTooltip(
+                `<div>
+                     古田台小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3c200e7af0ca7e2d9114e9c7fe4c49c5 = L.circleMarker(
+                [34.4883470105118, 132.506272243998],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_3c200e7af0ca7e2d9114e9c7fe4c49c5.bindTooltip(
+                `<div>
+                     八木小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_646447c7eeb44103c073a229d3afcdc1 = L.circleMarker(
+                [34.469869674568, 132.472937063076],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_646447c7eeb44103c073a229d3afcdc1.bindTooltip(
+                `<div>
+                     緑井小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_45b63fb9c0c4d9d14b6b015101859cf1 = L.circleMarker(
+                [34.4646263210703, 132.48642358399],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_45b63fb9c0c4d9d14b6b015101859cf1.bindTooltip(
+                `<div>
+                     川内小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c7b158914853733d2515121f830319e6 = L.circleMarker(
+                [34.4494270906059, 132.479202683997],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_c7b158914853733d2515121f830319e6.bindTooltip(
+                `<div>
+                     中筋小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6fbc3d1634dd4ae22047e08bfade7957 = L.circleMarker(
+                [34.454640163411, 132.471783359994],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_6fbc3d1634dd4ae22047e08bfade7957.bindTooltip(
+                `<div>
+                     古市小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c362cac6906aee9a6136474500762e6a = L.circleMarker(
+                [34.4574587106688, 132.46255769698],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_c362cac6906aee9a6136474500762e6a.bindTooltip(
+                `<div>
+                     大町小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_65422a1a35161273a65e51b5964aef20 = L.circleMarker(
+                [34.480119092169, 132.465144337971],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_65422a1a35161273a65e51b5964aef20.bindTooltip(
+                `<div>
+                     毘沙門台小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ff8498f18de1693cb4598e3ce24af2ae = L.circleMarker(
+                [34.4741495607359, 132.458857134974],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_ff8498f18de1693cb4598e3ce24af2ae.bindTooltip(
+                `<div>
+                     安東小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_494aa4890326ada99deaccf970863b61 = L.circleMarker(
+                [34.4854610961839, 132.447703040985],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_494aa4890326ada99deaccf970863b61.bindTooltip(
+                `<div>
+                     上安小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ce10ba25d8b053b0de49dc390bb9715c = L.circleMarker(
+                [34.4733833021397, 132.442791905038],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_ce10ba25d8b053b0de49dc390bb9715c.bindTooltip(
+                `<div>
+                     安小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7e42e704215a9ecbadd0a54241c01f26 = L.circleMarker(
+                [34.4812501820381, 132.436000606999],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_7e42e704215a9ecbadd0a54241c01f26.bindTooltip(
+                `<div>
+                     安北小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_656e73f742b6d589754dde7a443994df = L.circleMarker(
+                [34.4680451526203, 132.432453308995],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_656e73f742b6d589754dde7a443994df.bindTooltip(
+                `<div>
+                     安西小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_327e954394c309324ff9b2ab5330a0ff = L.circleMarker(
+                [34.4426794981484, 132.464076251011],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_327e954394c309324ff9b2ab5330a0ff.bindTooltip(
+                `<div>
+                     祇園小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cadba20c9c6580a84a4b139534f6d90e = L.circleMarker(
+                [34.438330809223, 132.452972772981],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_cadba20c9c6580a84a4b139534f6d90e.bindTooltip(
+                `<div>
+                     山本小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_44de8d82d65ee48d9ce7e88a5a2770b6 = L.circleMarker(
+                [34.4272241814524, 132.454929521999],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_44de8d82d65ee48d9ce7e88a5a2770b6.bindTooltip(
+                `<div>
+                     長束小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4287ef2055401df12d84c5a1d548bdba = L.circleMarker(
+                [34.4396156937335, 132.470254278999],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_4287ef2055401df12d84c5a1d548bdba.bindTooltip(
+                `<div>
+                     原小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6e8ebe6f2e1871a6eb94bdb84252e36f = L.circleMarker(
+                [34.4315132022812, 132.466934628018],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_6e8ebe6f2e1871a6eb94bdb84252e36f.bindTooltip(
+                `<div>
+                     原南小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_52e48ffd2981efbac041e1e630a07a25 = L.circleMarker(
+                [34.4828609951479, 132.353864354027],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_52e48ffd2981efbac041e1e630a07a25.bindTooltip(
+                `<div>
+                     戸山小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_84cf0f84670f865023e5fc7329c49744 = L.circleMarker(
+                [34.4616934081833, 132.40761956395],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_84cf0f84670f865023e5fc7329c49744.bindTooltip(
+                `<div>
+                     伴小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_df3aa2e635cb6ee5563fbbd675c657eb = L.circleMarker(
+                [34.480484101644, 132.491963893918],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_df3aa2e635cb6ee5563fbbd675c657eb.bindTooltip(
+                `<div>
+                     梅林小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6111859df519b74727ae694376638117 = L.circleMarker(
+                [34.4628371730371, 132.420630530969],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_6111859df519b74727ae694376638117.bindTooltip(
+                `<div>
+                     伴東小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e0a9cd5d562871e2da4d31481203538a = L.circleMarker(
+                [34.4284598307089, 132.448710281946],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_e0a9cd5d562871e2da4d31481203538a.bindTooltip(
+                `<div>
+                     長束西小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_85676c69e28c646add263f9286234e4b = L.circleMarker(
+                [34.4489557836289, 132.392339320007],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_85676c69e28c646add263f9286234e4b.bindTooltip(
+                `<div>
+                     大塚小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5688ef896d9c7fd43adb181a3bb3392b = L.circleMarker(
+                [34.4513447075159, 132.384284278937],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_5688ef896d9c7fd43adb181a3bb3392b.bindTooltip(
+                `<div>
+                     伴南小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_19633a845d1cb9108c0c47970870f590 = L.circleMarker(
+                [34.4455506474773, 132.485061776106],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_19633a845d1cb9108c0c47970870f590.bindTooltip(
+                `<div>
+                     東野小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a54bf37a9046b10354a8e907e06c3b72 = L.circleMarker(
+                [34.4416949161961, 132.433894302912],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_a54bf37a9046b10354a8e907e06c3b72.bindTooltip(
+                `<div>
+                     春日野小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d22eae349fd6b78888a29a30324c1737 = L.circleMarker(
+                [34.5861813225086, 132.67724313997],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_d22eae349fd6b78888a29a30324c1737.bindTooltip(
+                `<div>
+                     井原小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3c5f5b7a658b223d31efbc431dbe9ee7 = L.circleMarker(
+                [34.5783317344653, 132.617841935107],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_3c5f5b7a658b223d31efbc431dbe9ee7.bindTooltip(
+                `<div>
+                     志屋小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0819b8a1c4000e50e04d35dbef3bc2a4 = L.circleMarker(
+                [34.5501366872488, 132.658892323974],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_0819b8a1c4000e50e04d35dbef3bc2a4.bindTooltip(
+                `<div>
+                     高南小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c76f42c3e38eeab646da57b74685f507 = L.circleMarker(
+                [34.5128807272822, 132.611660562105],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_c76f42c3e38eeab646da57b74685f507.bindTooltip(
+                `<div>
+                     三田小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_413792fbe3223cdc9fbaa954da7b55ed = L.circleMarker(
+                [34.481547573825, 132.566728636034],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_413792fbe3223cdc9fbaa954da7b55ed.bindTooltip(
+                `<div>
+                     狩小川小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f1da2f92f25415e39dcd2b9ad8d2124e = L.circleMarker(
+                [34.4822554181419, 132.53066719806],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_f1da2f92f25415e39dcd2b9ad8d2124e.bindTooltip(
+                `<div>
+                     深川小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_33c39fcbe7ae8704935c2efa92a45e57 = L.circleMarker(
+                [34.4831807919975, 132.525104418041],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_33c39fcbe7ae8704935c2efa92a45e57.bindTooltip(
+                `<div>
+                     亀崎小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d2f9dd763ce7df1743ad5c7845a01d1c = L.circleMarker(
+                [34.4830049075312, 132.518043412036],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_d2f9dd763ce7df1743ad5c7845a01d1c.bindTooltip(
+                `<div>
+                     真亀小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7ff5df364e6bba2cd6d893fe933eec1e = L.circleMarker(
+                [34.4754590019021, 132.515027510026],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_7ff5df364e6bba2cd6d893fe933eec1e.bindTooltip(
+                `<div>
+                     落合東小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8d4cf53095e8c34b60634cac1c677f4f = L.circleMarker(
+                [34.4667012335238, 132.513588133022],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_8d4cf53095e8c34b60634cac1c677f4f.bindTooltip(
+                `<div>
+                     落合小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7acaa7171be58c6dc45eca9d50ffb56f = L.circleMarker(
+                [34.4693396363721, 132.501856185982],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_7acaa7171be58c6dc45eca9d50ffb56f.bindTooltip(
+                `<div>
+                     口田東小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8a9f84262395e2606c54229a56f59905 = L.circleMarker(
+                [34.4583576290736, 132.496018376069],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_8a9f84262395e2606c54229a56f59905.bindTooltip(
+                `<div>
+                     口田小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a1f85a30aaef6ed2017ebbba55177337 = L.circleMarker(
+                [34.5548477548827, 132.546192065984],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_a1f85a30aaef6ed2017ebbba55177337.bindTooltip(
+                `<div>
+                     大林小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ef58dfea7714633a03328afc8979e19a = L.circleMarker(
+                [34.5393043700935, 132.526884485992],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_ef58dfea7714633a03328afc8979e19a.bindTooltip(
+                `<div>
+                     三入小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_057ce672abee4e5c61b657396752a735 = L.circleMarker(
+                [34.518528302727, 132.509732966913],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_057ce672abee4e5c61b657396752a735.bindTooltip(
+                `<div>
+                     可部小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9b86f271f9a735f56399133b76ac5155 = L.circleMarker(
+                [34.5041940188617, 132.516768642067],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_9b86f271f9a735f56399133b76ac5155.bindTooltip(
+                `<div>
+                     可部南小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f679c8939b0008146fb4323109d80083 = L.circleMarker(
+                [34.5269592232594, 132.495548656065],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_f679c8939b0008146fb4323109d80083.bindTooltip(
+                `<div>
+                     亀山小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7bd709b8f34190b954b230118fc3dccd = L.circleMarker(
+                [34.5204256133472, 132.49390849408],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_7bd709b8f34190b954b230118fc3dccd.bindTooltip(
+                `<div>
+                     亀山南小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2976ff9ad869dfa29b15f24dedd225ea = L.circleMarker(
+                [34.5838134317647, 132.460615140029],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_2976ff9ad869dfa29b15f24dedd225ea.bindTooltip(
+                `<div>
+                     鈴張小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ca655883d79b200827a70bb42c575652 = L.circleMarker(
+                [34.5519686876137, 132.445131792059],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_ca655883d79b200827a70bb42c575652.bindTooltip(
+                `<div>
+                     飯室小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_350b24bab2e0077e6830fe9ab72e6d19 = L.circleMarker(
+                [34.4963837170552, 132.470564138949],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_350b24bab2e0077e6830fe9ab72e6d19.bindTooltip(
+                `<div>
+                     筒瀬小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b136316ff016150b17d4afd19e6c168a = L.circleMarker(
+                [34.50792924307, 132.439123019056],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_b136316ff016150b17d4afd19e6c168a.bindTooltip(
+                `<div>
+                     日浦小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ad3bc9221d7f0b81bb6d1eb4264fcc37 = L.circleMarker(
+                [34.4999247331555, 132.392972720022],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_ad3bc9221d7f0b81bb6d1eb4264fcc37.bindTooltip(
+                `<div>
+                     久地南小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dab15ec0ac42ee000dcc1282eaf6d9b5 = L.circleMarker(
+                [34.4730690796446, 132.528318615981],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_dab15ec0ac42ee000dcc1282eaf6d9b5.bindTooltip(
+                `<div>
+                     倉掛小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5cf74cf039d9234bf1ea69466337a2ff = L.circleMarker(
+                [34.5353693878293, 132.53471821604],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_5cf74cf039d9234bf1ea69466337a2ff.bindTooltip(
+                `<div>
+                     三入東小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_516aab3688b96b8af4a05b6558c0bd1a = L.circleMarker(
+                [34.421805317023, 132.606984144045],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_516aab3688b96b8af4a05b6558c0bd1a.bindTooltip(
+                `<div>
+                     瀬野小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e357e73de3b586cdae2787dbedcc1761 = L.circleMarker(
+                [34.4038640811225, 132.580941133046],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_e357e73de3b586cdae2787dbedcc1761.bindTooltip(
+                `<div>
+                     中野東小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7c280d53bd2d72e480c9a7d3637f9370 = L.circleMarker(
+                [34.3991454924617, 132.573877037053],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_7c280d53bd2d72e480c9a7d3637f9370.bindTooltip(
+                `<div>
+                     中野小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a67c2eb70e058179e191cfef513cc056 = L.circleMarker(
+                [34.393937298195, 132.550326731979],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_a67c2eb70e058179e191cfef513cc056.bindTooltip(
+                `<div>
+                     畑賀小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c7a0767647189200dd94a4c4cd8d0bd4 = L.circleMarker(
+                [34.3849074870929, 132.626651109928],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_c7a0767647189200dd94a4c4cd8d0bd4.bindTooltip(
+                `<div>
+                     阿戸小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6822062406756e85b9686193d492538b = L.circleMarker(
+                [34.3748406289086, 132.52674997005],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_6822062406756e85b9686193d492538b.bindTooltip(
+                `<div>
+                     船越小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1e1888aca6aa8cf0fac4731ebe0d9aba = L.circleMarker(
+                [34.3502567892216, 132.533665626972],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_1e1888aca6aa8cf0fac4731ebe0d9aba.bindTooltip(
+                `<div>
+                     矢野西小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_646c0410a65a56ac4ef3a7f397d9f7d4 = L.circleMarker(
+                [34.3478829409886, 132.535261703966],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_646c0410a65a56ac4ef3a7f397d9f7d4.bindTooltip(
+                `<div>
+                     矢野小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ff03f28649b2bb8c7534cfa587eb503c = L.circleMarker(
+                [34.3379707845391, 132.534312839063],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_ff03f28649b2bb8c7534cfa587eb503c.bindTooltip(
+                `<div>
+                     矢野南小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b27f1a18008e35f6c9575bfb8d50d53a = L.circleMarker(
+                [34.4268196731654, 132.589950827991],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_b27f1a18008e35f6c9575bfb8d50d53a.bindTooltip(
+                `<div>
+                     みどり坂小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1762243920ab93ffda69f1631668c4c7 = L.circleMarker(
+                [34.4193092936662, 132.38426295592],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_1762243920ab93ffda69f1631668c4c7.bindTooltip(
+                `<div>
+                     石内小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b4d6da46cb25d3faacb5dbdfeaad54e1 = L.circleMarker(
+                [34.4131722403503, 132.352224898981],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_b4d6da46cb25d3faacb5dbdfeaad54e1.bindTooltip(
+                `<div>
+                     河内小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_43c357452901585d168be86e531e98b3 = L.circleMarker(
+                [34.3921090457908, 132.357509730013],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_43c357452901585d168be86e531e98b3.bindTooltip(
+                `<div>
+                     八幡小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cac7bbf64b3b40b2caf432bd125742f8 = L.circleMarker(
+                [34.3941532362426, 132.365476674058],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_cac7bbf64b3b40b2caf432bd125742f8.bindTooltip(
+                `<div>
+                     八幡東小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_23def66ce3859bc12b2ce57dcc49013f = L.circleMarker(
+                [34.3816611330746, 132.338608281068],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_23def66ce3859bc12b2ce57dcc49013f.bindTooltip(
+                `<div>
+                     五日市観音西小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9d2b6878d3118d76a1e4e86c74001203 = L.circleMarker(
+                [34.3737102608888, 132.349336356043],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_9d2b6878d3118d76a1e4e86c74001203.bindTooltip(
+                `<div>
+                     五日市観音小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0f43160c24f337cd3ab89ba801363857 = L.circleMarker(
+                [34.4228292500722, 132.405613020066],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_0f43160c24f337cd3ab89ba801363857.bindTooltip(
+                `<div>
+                     五月が丘小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e14191d31c69577d252dfe1b6f653bd3 = L.circleMarker(
+                [34.3919759903751, 132.380436432078],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_e14191d31c69577d252dfe1b6f653bd3.bindTooltip(
+                `<div>
+                     美鈴が丘小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6517c0696e330eafc7d07064bb24f41c = L.circleMarker(
+                [34.3690092150835, 132.352851880129],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_6517c0696e330eafc7d07064bb24f41c.bindTooltip(
+                `<div>
+                     五日市中央小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ac741a50494eaff5a1cf45fce9e03ea4 = L.circleMarker(
+                [34.368598164612, 132.361191007138],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_ac741a50494eaff5a1cf45fce9e03ea4.bindTooltip(
+                `<div>
+                     五日市小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1824c0842be68d8259672a14319c1361 = L.circleMarker(
+                [34.3752816089287, 132.368584885045],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_1824c0842be68d8259672a14319c1361.bindTooltip(
+                `<div>
+                     五日市東小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_74a9bd9285bd0eefbb4f0f9cbe20f842 = L.circleMarker(
+                [34.3611922102319, 132.357373364998],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_74a9bd9285bd0eefbb4f0f9cbe20f842.bindTooltip(
+                `<div>
+                     五日市南小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_13aea70d01819a0809f45b7aa60c5557 = L.circleMarker(
+                [34.3574653424276, 132.354144604996],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_13aea70d01819a0809f45b7aa60c5557.bindTooltip(
+                `<div>
+                     楽々園小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_037f793418a6c53f70ebabe2cb4ef255 = L.circleMarker(
+                [34.4263730773011, 132.364178598017],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_037f793418a6c53f70ebabe2cb4ef255.bindTooltip(
+                `<div>
+                     藤の木小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a8a1c6f460e74533974e54a5cbd7d03a = L.circleMarker(
+                [34.4102546491358, 132.344021513977],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_a8a1c6f460e74533974e54a5cbd7d03a.bindTooltip(
+                `<div>
+                     彩が丘小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d3bc10d7c986c200d5b854065a8289f3 = L.circleMarker(
+                [34.5256693366954, 132.31609971901],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_d3bc10d7c986c200d5b854065a8289f3.bindTooltip(
+                `<div>
+                     湯来東小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_24905bfbcc8052da01feb43a71594ae5 = L.circleMarker(
+                [34.4699436110457, 132.233882513057],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_24905bfbcc8052da01feb43a71594ae5.bindTooltip(
+                `<div>
+                     湯来西小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_75e87a5f033e304f23b875499a1a208b = L.circleMarker(
+                [34.4334771423777, 132.29003832801],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_75e87a5f033e304f23b875499a1a208b.bindTooltip(
+                `<div>
+                     湯来南小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1c52d8594e3068ff9f6345d374487407 = L.circleMarker(
+                [34.4433181572717, 132.385959853047],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+    
+            circle_marker_1c52d8594e3068ff9f6345d374487407.bindTooltip(
+                `<div>
+                     石内北小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            tile_layer_2fc90120359af51da4858055b6ab55a8.addTo(map_e39727a8e8f90051a947f766b0500e2f);
+        
+</script>
+</html>
